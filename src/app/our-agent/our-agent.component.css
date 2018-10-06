@@ -1,0 +1,18 @@
+.btn-info{
+  width: 100%;
+
+}
+ul{
+  display: inline;
+}
+li{
+
+  display: inline-block;
+
+
+}
+.col-md-2
+{
+  margin: 0.5em;
+  padding-left: 5px;
+}

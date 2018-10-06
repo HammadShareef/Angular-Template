@@ -1,0 +1,63 @@
+
+<div class="container">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Our Properties</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Our Agents</a>
+      </li>
+
+      </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="container" *ngIf="agent"  >
+          <div class = "row" >
+              <div class="col-md-3">
+                         <img src="{{agent.image}}" alt="picture"  height="200px" width="200px" routerLink="/Detail/{{agent.id}}/PropertiesDetail"><br>
+                        </div>
+
+                        <div class="col-md-2">
+
+                        </div>
+
+                         <div class="col-md-3" style="text-align: center; font-family: Arial, Helvetica, sans-serif; color:dimgray">
+                            <h4>{{agent.name}}</h4><br>
+                            <h5>{{agent.office_Address}}</h5>
+                            <p >{{agent.price}}<p>
+
+                  </div>
+      </div>
+    </div>
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="container" *ngIf="agent">
+              <div class = "row">
+                  <div class="col-md-3">
+                             <img src="{{agent.a_pic}}" alt="picture"  height="200px" width="200px" routerLink="/Detail/{{agent.id}}/Agent"><br>
+                            </div>
+
+                            <div class="col-md-2">
+
+                            </div>
+
+                             <div class="col-md-3" style="text-align: center; font-family: Arial, Helvetica, sans-serif; color:dimgray;">
+                                <h4>{{agent.a_id}}</h4>
+                                <h5>{{agent.a_name}}</h5>
+                                <p >{{agent.office_Address}}<p>
+
+
+                                    <li><button type="button" class="btn btn-primary"><i class="fas fa-phone"></i>Contact</button></li>
+                                    <li><button type="button" class="btn btn-primary" style="margin-left: 5px;"><i class="far fa-envelope"></i>Email</button></li>
+
+
+
+                      </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+
+

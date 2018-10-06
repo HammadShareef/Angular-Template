@@ -1,0 +1,33 @@
+
+
+<br>
+<h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif; color: darkslateblue; font-size:xx-large;">3 Bedroom sale in Area {{agent.office_Address}}</h2>
+<br>
+
+<div class = "row">
+  <div class="col-lg-3">
+    <img src={{agent.image}} alt="picture" style="height: 100%;width: 120%; padding-left: 50px;">
+  </div>
+  <div class="col-lg-4">
+
+  </div>
+    <div class="col-lg-3" id="Agent-div" *ngIf="agent" style="height: 100%;width: 120%; padding-left: 50px;" >
+       <div class="container" >
+           <span class="badge">
+               <img src="{{agent.image}}" alt="picture" id="pic_id" ></span>
+               <br>
+              <p >Company Name:{{agent.name}}</p>
+              <p >Agent Name:{{agent.a_name}}</p>
+              <p >{{agent.a_id}}</p>
+              <button type="button" class="btn btn-info">Email</button>
+              <br>
+
+            <li><button type="button" class="btn btn-link"><img src='picture/fb.png' alt="Not found"></button></li>
+            <li><button type="button" class="btn btn-link"><img src='picture/twitter.png' alt="Not found"></button></li>
+            <li><button type="button" class="btn btn-link"><img src='picture/Linkedin.png' alt="Not found"></button></li>
+
+         </div>
+
+
+     </div>
+   </div>

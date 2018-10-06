@@ -1,0 +1,21 @@
+<br>
+<br>
+
+<div class = "row">
+   <div class="col-lg-3" id="Agent-div" *ngFor="let agent of AGENTS">
+      <div class="content" routerLink="/Detail/{{agent.id}}">
+          <span class="badge">
+              <img src="{{agent.image}}" alt="picture" id="pic_id"  ><br></span>
+             <h1>{{agent.name}}</h1><br>
+             <h3> {{agent.detail}}</h3>
+
+        </div>
+
+
+    </div>
+  </div>
+
+
+  <router-outlet></router-outlet>
+
+

@@ -1,0 +1,61 @@
+<br>
+<br>
+<div class="container" *ngIf="agent" >
+    <div class = "row">
+        <div class="col-md-3" id="Agent-div">
+                   <img src="{{agent.a_pic}}" alt="picture"  height="200px" width="200px"><br>
+                  </div>
+
+                   <div class="col-md-3" style="padding-left: 10px;">
+                     <br>
+                      <h4>{{agent.a_name}}</h4><br>
+                      <p> {{agent.office_Address}}<p>
+
+            </div>
+            <div class="col-md-2">
+
+            </div>
+
+            <br>
+            <br>
+
+                <div class="col-md-3" style="text-align: center">
+                    <button type="button" class="btn btn-info"><i class="fas fa-phone"></i>Call</button>
+                    <br>
+                    <br>
+
+                    <button type="button" class="btn btn-info"><i class="far fa-envelope"></i>Email</button>
+
+                    <br>
+                    <br>
+            <li><button type="button" class="btn btn-link"><img src='picture/fb.png' alt="Not found"></button></li>
+            <li><button type="button" class="btn btn-link"><img src='picture/twitter.png' alt="Not found"></button></li>
+            <li><button type="button" class="btn btn-link"><img src='picture/Linkedin.png' alt="Not found"></button></li>
+
+            <br>
+
+            <h1>Company</h1>
+            <br>
+            <img src="{{agent.image}}" alt="Picture not found" style="height: 200px;width: 200px;">
+            <br>
+            <p>{{agent.a_name}}</p>
+            <a  routerLink="/Detail/{{agent.id}}">View Agency Profile</a>
+
+
+
+            </div>
+      </div>
+      <br>
+      <div class="row">
+
+          <h1>
+            {{agent.name}} Details
+          </h1>
+          <p>
+            {{agent.detail}}
+          </p>
+
+      </div>
+</div>
+
+<router-outlet></router-outlet>

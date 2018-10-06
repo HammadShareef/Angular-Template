@@ -1,0 +1,53 @@
+<br>
+<div class="container" *ngIf="agent" >
+<div class = "row">
+    <div class="col-md-3" id="Agent-div">
+               <img src="{{agent.image}}" alt="picture"  height="200px" width="200px"><br>
+              </div>
+
+               <div class="col-md-3">
+                  <h4>{{agent.name}}</h4><br>
+                  <h3> {{agent.office_Address}}</h3>
+
+        </div>
+
+        <div class="col-md-2">
+
+        </div>
+
+        <div class="col-md-3" style="text-align: center">
+            <button type="button" class="btn btn-info"><i class="fas fa-phone"></i>Call</button>
+            <br>
+            <br>
+
+            <button type="button" class="btn btn-info"><i class="far fa-envelope"></i>Email</button>
+
+            <br>
+            <br>
+
+
+
+            <li><button type="button" class="btn btn-link"><img src='picture/fb.png' alt="Not found"></button></li>
+            <li><button type="button" class="btn btn-link"><img src='picture/twitter.png' alt="Not found"></button></li>
+            <li><button type="button" class="btn btn-link"><img src='picture/Linkedin.png' alt="Not found"></button></li>
+
+       </div>
+
+
+       <div col-md-1>
+
+       </div>
+       <br>
+       <br>
+
+       <div col-md-2>
+         <h3>{{agent.name}}</h3>
+         <p>{{agent.detail}}</p>
+       </div>
+
+
+     </div>
+     <br>
+
+  </div>
+<app-properties></app-properties>

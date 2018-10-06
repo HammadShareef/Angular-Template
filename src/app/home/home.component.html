@@ -1,0 +1,48 @@
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="height: 50%;width: 100%">
+            <img src="picture/home-1.jpg" alt="Los Angeles">
+          </div>
+          <div class="carousel-item">
+            <img src="picture/home-2.jpg" alt="Chicago">
+          </div>
+          <div class="carousel-item">
+            <img src="picture/home-3.jpg" alt="New York">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+      <br>
+      <br>
+
+      <div class = "row">
+        <div class="col-lg-3" id="Agent-div" *ngFor="let agent of AGENTS">
+           <div class="content" routerLink="/Detail/{{agent.id}}">
+               <span class="badge">
+                   <img src="{{agent.image}}" alt="picture" id="pic_id"  ><br></span>
+                  <h1>{{agent.name}}</h1><br>
+                  <h3> {{agent.detail}}</h3>
+
+             </div>
+
+
+         </div>
+       </div>
+
